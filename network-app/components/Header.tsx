@@ -2,7 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Link from "next/link";
 import { Briefcase, HomeIcon, SearchIcon, UserIcon,  MessagesSquare } from 'lucide-react'
-//import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { Button } from "./ui/button";
 
 function Header() {
   return( 
@@ -52,17 +53,17 @@ function Header() {
           <p>Messaging</p>
         </Link>
 
-        {/*<SignedIn>
+        <SignedIn>
           <UserButton />
-  </SignedIn>*/}
+        </SignedIn>
 
-        {/*
+        
         <SignedOut>
           <Button asChild variant="secondary">
             <SignInButton />
           </Button>
         </SignedOut>
-         */}
+        
         </div>
     </div>
 
